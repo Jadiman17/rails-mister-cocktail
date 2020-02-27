@@ -1,0 +1,10 @@
+
+<h1>Your Cocktails</h1>
+<h2><%= @cocktail.name %> </h2>
+
+
+
+<%= link_to "Add ingredients", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+<br>
+<br>
+<%= link_to "Back", cocktails_path, class: "btn btn-primary" %>

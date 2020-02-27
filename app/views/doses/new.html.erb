@@ -1,0 +1,11 @@
+<h1>Please Select Doses</h1>
+
+<%= form_for [@cocktail, @dose] do |f| %>
+  <%= f.label :dose %>
+  <%= f.text_field :description %>
+    <%= f.submit %>
+<% end %>
+
+
+<%= link_to "Back", cocktails_path, class: "btn btn-primary" %>
+
