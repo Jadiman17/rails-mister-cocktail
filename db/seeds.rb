@@ -15,7 +15,10 @@ Ingredient.create(name: "mint leaves")
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 response = open(url).read
 results = JSON.parse(response)
-
-results ["drinks"].each do |ingredient|
+byebug
+results["drinks"].each do |ingredient|
+  byebug
 name = ingredient["strIngredient1"]
 Ingredient.create(name: name)
+
+end
