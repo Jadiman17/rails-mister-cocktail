@@ -1,9 +1,10 @@
 // Place all the styles related to the Cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.banner{
 
-  background-size: cover;
+
+.banner{
+  background-size: center;
   background-position: center;
   padding: 150px 0;
 }
@@ -35,22 +36,28 @@ height: 100px;
   padding: 16px;
   width: 400px;
   display:flex;
-
+  align-items: center;
   border-radius: 5px;
   box-shadow: 1px 1px 1px 4px #888888;
 
 }
 
-
-.navbar-lewagon {
-  justify-content: space-between;
-  background: transparent;
+.tabs-underlined {
+  display: flex;
+  align-items: center;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.tabs-underlined .tab-underlined {
+  color: black;
+  padding: 8px;
+  margin: 8px 16px;
+  opacity: .4;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.tabs-underlined .tab-underlined.active {
+  opacity: 1;
+  border-bottom: 3px solid #555555;
 }

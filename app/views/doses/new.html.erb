@@ -1,13 +1,28 @@
-<h1>Please Select Doses</h1>
+<ul class="list-inline tabs-underlined">
+  <li>
+    <a href="#" class="tab-underlined"><%= link_to "Home", cocktails_path%></a>
+  </li>
+  <li>
+    <a href="#" class="tab-underlined"><%= link_to "Create a new cocktail", new_cocktail_path %></a>
+  </li>
+</ul>
 
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.label :dose %>
-  <%= f.text_field :description %>
-  <%= f.association :ingredient %>
+<div class="dose">
+
+    <h1>Please Select Dose</h1>
+
+    <div class="t_table">
+    <div class="card-product-d">
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <div class="card-product-infos-d">
+    <%= f.label :dose %>
+    <%= f.text_field :description %>
+    <%= f.association :ingredient %>
     <%= f.submit %>
-<% end %>
-
-
+    <% end %>
+    </div>
+ </div>
+ </div>
 <%= link_to "Back", cocktails_path, class: "btn btn-primary" %>
 
-
+</div>
