@@ -1,9 +1,19 @@
-<h1>Cocktails</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://mastboston.com/wp-content/uploads/2017/04/cocktails.jpg">
+  <%= link_to "Make a new cocktail", new_cocktail_path, class: "btn btn-primary" %>
+  <div class="container">
+    <h1 class="title">Cocktails!!</h1>
+  </div>
+</div>
 
-<ul><h2>
+  <div class="card-product">
   <% @cocktails.each do |cocktail| %>
-  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+  <div class="card-product-infos">
+  <%= link_to image_tag("https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2013/11/mojito-cocktails.jpg?itok=7ZS6egg_") %>
+  <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+</div>
 <% end %>
-</ul></h2>
+</div>
 
-<%= link_to "Make a new cocktail", new_cocktail_path, class: "btn btn-primary" %>
+
+
+

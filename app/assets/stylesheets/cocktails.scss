@@ -1,3 +1,56 @@
 // Place all the styles related to the Cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.banner{
+
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.title{
+  color: white;
+  margin-left: 40px;
+}
+
+.card-product {
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  justify-content: center;
+  padding:20px;
+}
+
+img{
+height: 100px;
+}
+.cards{
+  display:flex;
+}
+
+
+.card-product-infos {
+  padding: 16px;
+  width: 400px;
+  display:flex;
+
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 4px #888888;
+
+}
+
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: transparent;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
